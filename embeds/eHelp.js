@@ -12,7 +12,7 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/stat** \`\`shows bot stats\`\`
 **/serverinfo** 
 **/purge** \`\`amount\`\`
-**/help** \`\`Command\\`\`
+**/help** \`\`Command\`\`
 **/userinfo** \`\`@UserName\`\`
 **/dog**
 **creator only**
