@@ -4,7 +4,7 @@ module.exports.scoreSystem = function(client, message, sql, Discord){
   sql.get(`SELECT * FROM userScores WHERE guildID = '${message.guild.id}' AND userID = '${message.author.id}'`).then(row =>{
     const eUsername = message.author.username.replace("'", "''");
     if (!row){
-      sql.run(`INSERT INTO userScores (guildID, userID, username, globalPoints, nextPL, uLevel, weeklyPoints, globalRank, weeklyRank) VALUES (?,?,?,?,?,?,?,?,?)`, [message.guild.id, message.author.id, message.author.username, 1, 20, 25, 30, 40, 50, 100]);
+      sql.run(`INSERT INTO userScores (guildID, userID, username, globalPoints, nextPL, uLevel, weeklyPoints, globalRank, weeklyRank) VALUES (?,?,?,?,?,?,?,?,?)`, [message.guild.id, message.author.id, message.author.username, 1, 25, 0, 0, 0, 0]);
     } else{
       let curPoints = row.globalPoints + 1;
 
