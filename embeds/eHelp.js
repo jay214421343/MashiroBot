@@ -10,8 +10,8 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/help**
 **/ping**
 **/dog**
-**/setinv** \`\`owner only\
-**/seton** \`\`owner only\
+**/setinv** \`\`owner only\`\`
+**/seton** \`\`owner only\`\`
 **/stat** \`\`shows bot stats\`\`
 **/serverinfo** 
 **/purge** \`\`amount\`\`
