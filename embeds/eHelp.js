@@ -14,7 +14,7 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/seton** \`\`owner only\`\`
 **/stat** \`\`shows bot stats\`\`
 **/serverinfo** 
-**/purge** \`\`amount\`\`
+**/clear** \`\`amount\`\`
 **/help** \`\`Command\`\`` , true)
     .setFooter("MultiBot", `${client.user.displayAvatarURL}`)
     message.channel.send({embed: embed});
