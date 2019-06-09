@@ -8,7 +8,8 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/rank**
 **/rank** \`\`@UserName\`\`
 **/help**
+**/ping**
 **/help** \`\`Command\`\`` , true)
-    .setFooter("Natsume#1150", `${client.user.displayAvatarURL}`)
+    .setFooter("MultiBot", `${client.user.displayAvatarURL}`)
     message.channel.send({embed: embed});
 }
