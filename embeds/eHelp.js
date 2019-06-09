@@ -12,7 +12,12 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/stat** \`\`shows bot stats\`\`
 **/serverinfo** 
 **/purge** \`\`amount\`\`
-**/help** \`\`Command\`\`` , true)
+**/help** \`\`Command\`\``
+**/userinfo** \`\`@UserName\`\`
+**/dog**
+**==/creator only/==**
+**/setinv**
+**/seton** , true)
     .setFooter("MultiBot", `${client.user.displayAvatarURL}`)
     message.channel.send({embed: embed});
 }
