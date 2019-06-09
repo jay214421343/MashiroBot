@@ -12,7 +12,7 @@ exports.run = (client, message, args, sql, Discord) => {
       var rlOut = rlOutp.join("\n");
     }
     var embed = new Discord.RichEmbed()
-      .setTitle("Mashiro Settings")
+      .setTitle("MultiBot Settings")
       .setDescription(`**Roles for ${message.guild.name}**`)
       .setColor(0x00AE86)
       .setThumbnail(message.guild.iconURL)
