@@ -1,7 +1,7 @@
 module.exports.helpEmbed = function(client, message, Discord) {
   var embed = new Discord.RichEmbed()
-    .setTitle("Mashiro")
-    .setDescription("List of commands for Mashiro.")
+    .setTitle("MultiBot")
+    .setDescription("List of commands for MultiBot.")
     .setColor(0x00AE86)
     .setThumbnail(client.user.displayAvatarURL)
     .addField("Commands", `**/leaderboard**
