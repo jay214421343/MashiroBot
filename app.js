@@ -74,5 +74,39 @@ client.on("message", message => {
   }
 });
 
+client.on('ready', () => {
+	client.user.setActivity(`on ${client.guilds.array().length} servers with ${client.users.size} members`, { type: "PLAYING" });
+    setTimeout(game2, 30000)
+});
+
+function game1() {
+    client.user.setActivity(`on ${client.guilds.array().length} servers with ${client.users.size} members`, { type: "PLAYING" });
+    setTimeout(game2, 30000)
+}
+
+function game2() {
+    client.user.setActivity(`Use /help for Help!`, { type: "PLAYING" });
+    setTimeout(game3, 30000)
+}
+
+function game3() {
+   client.user.setActivity(`Prefix is /`, { type: "PLAYING" });
+    setTimeout(game4, 300000);
+}
+function game4() {
+   client.user.setActivity(`You`, { type: "LISTENING" });
+    setTimeout(game5, 30000);
+}
+function game5() {
+   client.user.setActivity(`Beta`, { type: "PLAYING" });
+    setTimeout(game1, 30000);
+}
+
+client.on('ready', () => {
+setInterval(() => {
+    dbl.postStats(client.guilds.size)
+  }, 3600000);
+});
+
 client.login(config.token);
 console.log('Ready');
