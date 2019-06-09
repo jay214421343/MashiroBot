@@ -9,6 +9,8 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/rank** \`\`@UserName\`\`
 **/help**
 **/ping**
+**/stat** \`\`shows bot stats\`\`
+**/serverinfo** 
 **/purge** \`\`amount\`\`
 **/help** \`\`Command\`\`` , true)
     .setFooter("MultiBot", `${client.user.displayAvatarURL}`)
