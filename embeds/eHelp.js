@@ -9,14 +9,13 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/rank** \`\`@UserName\`\`
 **/help**
 **/ping**
+**/dog**
+**/setinv** \`\`owner only\
+**/seton** \`\`owner only\
 **/stat** \`\`shows bot stats\`\`
 **/serverinfo** 
 **/purge** \`\`amount\`\`
-**/help** \`\`Command\`\`
-**/userinfo** \`\`@UserName\`\`
-**/dog**
-**/setinv** \`\`owner only\`\`
-**/seton** \`\`owner only\`\` , true)
+**/help** \`\`Command\`\`` , true)
     .setFooter("MultiBot", `${client.user.displayAvatarURL}`)
     message.channel.send({embed: embed});
 }
