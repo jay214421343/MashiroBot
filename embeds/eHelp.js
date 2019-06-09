@@ -15,7 +15,7 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/help** \`\`Command\\`\`
 **/userinfo** \`\`@UserName\`\`
 **/dog**
-**==/creator only/==**
+**creator only**
 **/setinv**
 **/seton** , true)
     .setFooter("MultiBot", `${client.user.displayAvatarURL}`)
