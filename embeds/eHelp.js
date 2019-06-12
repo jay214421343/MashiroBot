@@ -10,6 +10,9 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/help**
 **/ping**
 **/dog**
+**/meme**
+**/slap** \`\`@UserName\`\`
+**/owo**
 **/setinv** \`\`owner only\`\`
 **/seton** \`\`owner only\`\`
 **/stat** \`\`shows bot stats\`\`
