@@ -1,5 +1,4 @@
 const { RichEmbed } = require('discord.js'), 
-      { get } = require('node-superfetch');
 
 exports.run = async (bot, message, args, color) => {
   
