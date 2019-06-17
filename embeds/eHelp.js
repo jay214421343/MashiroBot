@@ -14,7 +14,6 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/owo**
 **/setinv** \`\`owner only\`\`
 **/seton** \`\`owner only\`\`
-**/stat** \`\`shows bot stats\`\`
 **/serverinfo** 
 **/clear** \`\`amount\`\`
 **/help** \`\`Command\`\`` , true)
