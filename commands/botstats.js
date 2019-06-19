@@ -20,7 +20,6 @@ exports.run = (client, message, args) =>{
         .addField('Current Problems :', 'Level Reset Trying to fix', true)
         .addField('Engine Version', '``$[error]``', true)
         .addField('Mem Usage :', '${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB', true)
-•
         .setFooter('Bot created at: 20 may 2019');
 
     return message.channel.send(serverembed);
