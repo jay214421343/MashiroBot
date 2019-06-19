@@ -9,7 +9,7 @@ exports.run = (client, message, args) =>{
         return botCount;
     }
 
-    let sicon = message.bot.iconURL;
+    let sicon = message.guild.iconURL;
     let serverembed = new Discord.RichEmbed()
         .setAuthor(`Bot - Informations`, message.guild.iconURL)
         .setColor("#15f153")
