@@ -19,8 +19,7 @@ exports.run = (client, message, args) =>{
         .addField("Updates:", 'readded stats!')
         .addField('Current Problems :', 'Level Reset Trying to fix', true)
         .addField('Engine Version', '``$[error]``', true)
-        .setFooter('Guild created at:')
-        .setTimestamp(message.guild.createdAt);
+        .setFooter('Bot created at:');
 
     return message.channel.send(serverembed);
 }
