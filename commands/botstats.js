@@ -17,7 +17,7 @@ exports.run = (client, message, args) =>{
         .addField('Version', 'Bot Version [3.1.0]', true)
         .addField('Bot Owner', '@🇳🇱💰ItzYaBoiJay💰🇳🇱#2079', true)
         .setThumbnail(sicon)
-        .addField("Updates:", 'readded stats!')
+        .addField("Updates:", 'Updates In The Stats')
         .addField('Current Problems :', 'Level Reset Trying to fix', true)
         .addField('Engine Version', • Node       :: ${process.version}`, {code: "asciidoc"}), true)
         .setFooter('Bot created at: 20 may 2019');
