@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const fs = require('fs');
 
 exports.run = (client, message, args) =>{
     function checkBots(guild) {
@@ -9,6 +10,9 @@ exports.run = (client, message, args) =>{
         return botCount;
     }
 
+    let djs = require('discord.js').version
+    let njs = process.versions.node
+    let ram = Math.round(process.memoryUsage().heapUsed / 1024 / 1024);
     let sicon = message.guild.iconURL;
     let serverembed = new Discord.RichEmbed()
         .setAuthor(`Bot - Informations`, message.guild.iconURL)
