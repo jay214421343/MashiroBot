@@ -16,10 +16,17 @@ exports.run = (client, message, args) =>{
         .addField('Version', 'Bot Version [3.1.0]', true)
         .addField('Bot Owner', '@🇳🇱💰ItzYaBoiJay💰🇳🇱#2079', true)
         .setThumbnail(sicon)
-        .addField("Updates:", 'Updates In The Stats')
+        .addField("Updates:", 'Updates In The BotStats')
         .addField('Current Problems :', 'Level Reset Trying to fix', true)
         .addField('Our Help Server', 'https://discord.gg/QWBffeK')
         .addField('Partners', 'No Partners Yet!')
+        .addField("Node Version", njs, true)
+        .addField("Discord.js Version", djs, true)
+        .addField("Ram Usage", ram + "MB / 32GB", true)
+        .addField("Servers", `${client.guilds.size}`, true)
+        .addField("Channels", `${client.channels.size}`, true)
+        .addField("Users", `${client.users.size.toLocaleString()}`, true)
+        .addField("Ping", `${Math.round(client.ping)}ms`, true)
         .setFooter('Bot created at: 20 may 2019');
 
     return message.channel.send(serverembed);
