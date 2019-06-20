@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const { version } = require("discord.js");
 
 exports.run = (client, message, args) =>{
     function checkBots(guild) {
@@ -19,7 +18,8 @@ exports.run = (client, message, args) =>{
         .setThumbnail(sicon)
         .addField("Updates:", 'Updates In The Stats')
         .addField('Current Problems :', 'Level Reset Trying to fix', true)
-        .addField('Engine Version', • Node       :: ${process.version}`, {code: "asciidoc"}), true)
+        .addField('Our Help Server', 'https://discord.gg/QWBffeK')
+        .addField('Partners', 'No Partners Yet!')
         .setFooter('Bot created at: 20 may 2019');
 
     return message.channel.send(serverembed);
