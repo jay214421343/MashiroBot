@@ -9,8 +9,9 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/rank** \`\`@UserName\`\`
 **/help**
 **/ping**
-**/botstats** \`\`ADDED BACK!\`\`
+**/botstats**
 **/dog**
+**/8ball** \`\`Question\`\`
 **/slap** \`\`@UserName\`\`
 **/owo**
 **/setinv** \`\`owner only\`\`
