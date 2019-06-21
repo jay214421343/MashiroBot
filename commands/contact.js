@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 module.exports.run = (bot, message, args, discord) => {
     var mes = args.join(' ')
-    let embed = new discord.RichEmbed()
+    let embed = new Discord.RichEmbed()
     .setTitle(`Contact System`)
     .setDescription(mes)
     .setColor(`BLUE`)
