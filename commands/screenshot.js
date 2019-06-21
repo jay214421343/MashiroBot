@@ -1,5 +1,4 @@
 const request = require("request").defaults({ encoding: null });
-const isURL = require("is-url");
 const { MessageEmbed } = require("discord.js");
 
 exports.run = async (client, message, args) => { // eslint-disable-line no-unused-vars
