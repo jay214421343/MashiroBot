@@ -20,6 +20,7 @@ exports.run = (client, message, args) =>{
         .addField('Version', 'Bot Version [3.1.0]', true)
         .addField('Bot Owner', '@🇳🇱💰ItzYaBoiJay💰🇳🇱#2079', true)
         .setThumbnail(sicon)
+        .setTimestamp()
         .addField("Updates:", 'Added /contact')
         .addField('Current Problems :', 'Level Reset Trying to fix', true)
         .addField('Our Help Server', 'https://discord.gg/QWBffeK')
