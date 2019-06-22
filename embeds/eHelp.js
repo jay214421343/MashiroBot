@@ -12,6 +12,7 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/botstats**
 **/contact** \`\`BETA\`\`
 **/dog**
+**/kick**
 **/8ball** \`\`Question\`\`
 **/slap** \`\`@UserName\`\`
 **/owo**
