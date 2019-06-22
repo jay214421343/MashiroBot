@@ -21,7 +21,7 @@ exports.run = (client, message, args) =>{
         .addField('Bot Owner', '@🇳🇱💰ItzYaBoiJay💰🇳🇱#2079', true)
         .setThumbnail(sicon)
         .setTimestamp()
-        .addField("Updates:", 'Added /contact')
+        .addField("Updates:", '**/kick FINNALY ADDED!**')
         .addField('Current Problems :', 'Level Reset Trying to fix', true)
         .addField('Our Help Server', 'https://discord.gg/QWBffeK')
         .addField('Partners', 'No Partners Yet!')
