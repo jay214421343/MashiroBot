@@ -18,7 +18,7 @@ function sendAnnounce(bot, message, args, guild) {
     .setColor("7289DA")
     .setAuthor(`${bot.user.username} Announcement`)
     .setDescription(`**Hello JayDev here, creator of MultiBot just wanting you to know, **\n${args.join(' ')}\n\n**This message was sent to *${guild.name}* on purpose from the creator.**\n*This announcement system wil also not be spammed alot.*`)
-    .setFooter(`An official announcement from JayDev. (FHGDev#0666)`, bot.user.avatarURL)
+    .setFooter(`An official announcement from JayDev.`, bot.user.avatarURL)
     .setTimestamp();
 
   if (sendChannel !== "") {
