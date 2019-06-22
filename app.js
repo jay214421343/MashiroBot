@@ -108,10 +108,5 @@ setInterval(() => {
   }, 3600000);
 });
 
-client.on("guildCreate", (guild) => {
-  require('./events/guildCreate.js')(bot, guild, discord)
-  baselogger(bot, `**Guild Join**\n\n**Guild:** ${guild.name}\n**Owner:** ${guild.owner.user.username}\n**Large:** ${guild.large}\n**Member Count:** ${guild.memberCount}\n\n**Total Guilds:** ${client.guilds.array().length}`, guild.iconURL);
-});
-
 client.login(config.token);
 console.log('Ready');
