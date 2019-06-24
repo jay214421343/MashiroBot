@@ -50,8 +50,6 @@ client.on("message", message => {
           }else{
             levelerCore.scoreSystem(client, message, sql, Discord);
             talkedRecently.add(message.author.id);
-            setTimeout(() => {
-            talkedRecently.delete(message.author.id);
             }, 4000);
           }
         }
