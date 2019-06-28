@@ -1,29 +1,43 @@
-const fetch = require("node-fetch");
-async run(message, args, level, settings, texts) { // eslint-disable-line no-unused-vars
-      let user = args[0];
-      let text = args.slice(1).join(" ") || undefined;
-      if (!user) return message.channel.send("You must provide a Twitter username, to have as the author of the tweet.");
-      if (user.startsWith("@")) user = args[0].slice(1);
+const Discord         = module.require('discord.js');
+var jimp              = require("jimp");
+var fs                = require('fs');
 
-      const type = user.toLowerCase() === "realdonaldtrump" ? "trumptweet" : "tweet";
-      const u = user.startsWith("@") ? user.slice(1) : user;
+exports.run = (bot, msg, params) => {
 
-      if (!text) {
-        text = await this.client.awaitReply(message, "Please enter the tweet's message...\nReply with `cancel` to exit this text-entry period.", 30000);
-        if (text.toLowerCase() === "cancel") return message.channel.send("Cancelled.");
-      }
+  var fileName = './images/trump_original.png';
+  var imageCaption = params.join(" ");
+  var loadedImage;
 
-      message.channel.startTyping();
+  if(imageCaption.length > 140){
+    return msg.channel.send("Oops looks like what you are trying to get trump to tweet is over 140 characters, try again")
+  }
 
-      fetch(`https://nekobot.xyz/api/imagegen?type=${type}&username=${u}&text=${encodeURIComponent(text)}`)
-        .then(res => res.json())
-        .then(data => message.channel.send({ file: data.message }))
-        .catch(error => {
-          this.client.logger.error(error);
-          message.channel.stopTyping(true);
-          return message.channel.send(texts.general.error.replace(/{{err}}/g, error.message));
-        });
-
-        message.channel.stopTyping(true);
+  function writeImage() {
+    jimp.read(fileName)
+      .then(function (image) {
+          loadedImage = image;
+          return jimp.loadFont(jimp.FONT_SANS_64_BLACK);
+      })
+      .then(function (font) {
+          loadedImage.print(font, 45, 160, imageCaption, 1250)
+                     .write("./images/trump_edited.png");
+      })
+      .catch(function (err) {
+          console.error(err);
+      });
     }
-}
+
+    function sendImage() {
+        msg.channel.send({files: [
+            {
+              attachment: "./images/trump_edited.png",
+              name: "trump.png"
+            }
+          ]});
+    }
+
+    writeImage();
+
+    setTimeout(sendImage, 5000);
+
+};
