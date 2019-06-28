@@ -1,5 +1,7 @@
+const Discord = require('discord.js');
+
 module.exports.run = (bot, message, args, discord) => {
-      let embed = new discord.RichEmbed()
+      let embed = new Discord.RichEmbed()
       .setTitle(`Testing`)
       .setThumbnail(bot.user.avatarURL)
       .setDescription(`Test Successfull!`)
