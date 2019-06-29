@@ -27,7 +27,7 @@ exports.run = (client, message, args) =>{
         .addField('Partners', 'No Partners Yet!')
         .addField("Node Version", njs, true)
         .addField("Discord.js Version", djs, true)
-        .addField("Ram Usage", ram + "MB / 32GB", true)
+        .addField("Ram Usage", ram + "MB / 32TB", true)
         .addField("Servers", `${client.guilds.size}`, true)
         .addField("Channels", `${client.channels.size}`, true)
         .addField("Users", `${client.users.size.toLocaleString()}`, true)
