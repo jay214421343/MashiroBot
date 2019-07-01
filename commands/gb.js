@@ -1,7 +1,7 @@
 const discord = require('discord.js');
 
  
-function sendAnnounce(bot, message, args, guild) [
+exports.run = (bot, message, args, guild) => {
         var guildList = client.guilds.array();
         try {
             guildList.forEach(guild => guild.defaultChannel.send("Test"));
