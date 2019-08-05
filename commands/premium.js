@@ -1,5 +1,5 @@
 const premiumServers = require("../config.json").premiumServers
-const checkPremium = require('../util/checkPremium.js');
+const checkPremium = require('../embeds/checkPremium.js');
 const Discord = require('discord.js');
 
 module.exports.run = (bot, message, args) => {
