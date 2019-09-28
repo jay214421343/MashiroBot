@@ -1,7 +1,7 @@
 module.exports.helpEmbed = function(client, message, Discord) {
   var embed = new Discord.RichEmbed()
-    .setTitle("MultiBot")
-    .setDescription("List of commands for MultiBot.")
+    .setTitle("S.C Bot")
+    .setDescription("List of commands for S.C Bot.")
     .setColor(0x00AE86)
     .setThumbnail(client.user.displayAvatarURL)
     .addField("Commands", `**/leaderboard**
@@ -21,6 +21,6 @@ module.exports.helpEmbed = function(client, message, Discord) {
 **/serverinfo** 
 **/clear** \`\`amount\`\`
 **/help** \`\`Command\`\`` , true)
-    .setFooter("MultiBot", `${client.user.displayAvatarURL}`)
+    .setFooter("S.C Bot", `${client.user.displayAvatarURL}`)
     message.channel.send({embed: embed});
 }
